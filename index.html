@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Big Smile for Proton</title>
+  <link rel="stylesheet" href="smile.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <div class="emoji">😊</div>
+      <h1>Happy Birthday, Proton! 🎉</h1>
+      <p class="message">Keep smiling always — your smile makes everything better 💖</p>
+      <a href="smile1.html" class="back-btn">← Back to Gallery</a>
+    </div>
+  </div>
+
+  <script>
+    // ✅ Voice greeting when page loads
+    window.onload = function() {
+      const message = new SpeechSynthesisUtterance("Happy Birthday Proton!,i am going to provide u instruction to go through this website,First click on the Back to gallery mentioned below and then after reading it, click again to go back to the gallery mentioned below on the second page,When you will be visiting  the third page,just click on evry grid and try to scroll it so that you can read the hidden messages and Keep smiling because Every one is with you and You are not alone,We all Love you and Wishing you a day filled with love and joy");
+      message.lang = "en-IN";   // Indian English accent
+      message.pitch = 1.2;      // cheerful pitch
+      message.rate = 0.7;       // slightly slower for clarity
+      message.volume = 10;       // full volume
+      window.speechSynthesis.speak(message);
+    };
+  </script>
+</body>
+</html>
